@@ -1,0 +1,12 @@
+{
+  "name": "ImgurScrup",
+  "description": "Uploads image from scrup directly to Imgur.com",
+  "version": "0.0.1",
+  "author": "Jacob Chapel",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/chapel/imgurscrup.git"
+  },
+  "engine": [ "node >=0.2.50" ]
+  "start": "server.js"
+}
