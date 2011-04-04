@@ -2,11 +2,20 @@
   "name": "ImgurScrup",
   "description": "Uploads image from scrup directly to Imgur.com",
   "version": "0.0.2",
-  "author": "Jacob Chapel",
+  "author": "Jacob Chapel <jacob.chapel@gmail.com>",
+  "licenses":     [{
+    "type":       "MIT",
+    "url":        "http://github.com/chapel/imgurscrup/raw/master/LICENSE"
+  }],
   "repository": {
     "type": "git",
     "url": "http://github.com/chapel/imgurscrup.git"
   },
-  "engine": [ "node >=0.4.0" ]
-  "start": "lib/app.js"
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "bin": {
+    "imgurscrup": "./lib/app.js"
+  },
+  "start": "./lib/app.js"
 }

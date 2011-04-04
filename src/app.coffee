@@ -1,7 +1,5 @@
 http = require 'http'
-https = require 'https'
-querystring = require 'querystring'
-    
+querystring = require 'querystring'  
     
 server = http.createServer (sReq, sRes) ->
   urlQuery = sReq.url.replace /[^a-zA-Z 0-9=]+/g, ''
@@ -39,4 +37,4 @@ server = http.createServer (sReq, sRes) ->
 
 
 # Change this number to change what port is used. e.g. http://127.0.0.1:8000/key=<key>
-server.listen 8000
+server.listen process.argv[2] or 8000
